@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.firebase.client.DataSnapshot;
@@ -17,7 +18,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tvRandName,tvQuestion;
-    private Button btnNext,btnRand,btnSkip;
+
+    private ImageButton btnSkip,btnNext,btnRand;
     private List<String> lst = new ArrayList<String>();
     private List<String> qlst= new ArrayList<String>();
     private String name;
@@ -30,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         tvQuestion = (TextView) findViewById(R.id.QuestionView);
         tvRandName = (TextView) findViewById(R.id.NameView);
-        btnNext = (Button) findViewById(R.id.btnNext);
-        btnRand = (Button) findViewById(R.id.btnRand);
-        btnSkip = (Button) findViewById(R.id.btnSkip);
+        btnNext = (ImageButton) findViewById(R.id.btnNext);
+        btnRand = (ImageButton) findViewById(R.id.btnRand);
+        btnSkip = (ImageButton) findViewById(R.id.btnSkip);
         mQuestionRef = new Firebase("https://m-power-38aa6.firebaseio.com/Questions");
 
         mQuestionRef.addValueEventListener(new ValueEventListener() {
@@ -98,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 try{tvQuestion.setText(qlst.get(count));}
                 catch (Exception i){
                     count =0;
-                    tvQuestion.setText(qlst.get(count));
+
                 }
                 mNameRef.addValueEventListener(new ValueEventListener() {
                     @Override
