@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "522567759527",
+    "firebase_url": "https://m-power-38aa6.firebaseio.com",
+    "project_id": "m-power-38aa6",
+    "storage_bucket": "m-power-38aa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522567759527:android:bba816360dee2b9a",
+        "android_client_info": {
+          "package_name": "powertools.mpower"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522567759527-08p5u0dggjejunqs2obpmaag6r9igvlg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "powertools.mpower",
+            "certificate_hash": "990910B6D7B21D8A219F7731356BD88A3704339A"
+          }
+        },
+        {
+          "client_id": "522567759527-behbumpsrn9rmmkpireglif7l314tg20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjl1rQQ0V1tJ5N77xdMYQ2IrxOe5k65fI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522567759527-behbumpsrn9rmmkpireglif7l314tg20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
